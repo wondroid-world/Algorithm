@@ -1,18 +1,24 @@
 fun main() {
     val (N, M) = readln().split(" ").map { it.toInt() }
-    val numbers = readln().split(" ").map { it.toInt() }
-    val sums = mutableSetOf<Int>()
+    val numbers = readln().split(" ").map { it.toInt() }.sorted()
 
-    for (i in 0 until N - 2) {
-        for (j in 1 until N - 1) {
-            for (k in 2 until N) {
-                if (i != j && j != k && k != i) {
-                    val sum = numbers[i] + numbers[j] + numbers[k]
-                    if (sum <= M) sums.add(sum)
-                }
+    var answer = 0
+    for (i in 0..N - 3) {
+        var left = i + 1
+        var right = N - 1
+        while (left < right) {
+            val sum = numbers[i] + numbers[left] + numbers[right]
+            if (sum == M) {
+                println(sum)
+                return
+            }
+            if (sum < M) {
+                answer = maxOf(answer, sum)
+                left++
+            } else {
+                right--
             }
         }
     }
-    val newSums = sums.sorted()
-    println(newSums.last())
+    println(answer)
 }
