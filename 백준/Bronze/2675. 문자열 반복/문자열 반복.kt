@@ -1,15 +1,12 @@
 fun main() {
     val T = readln().toInt()
-    val result = mutableListOf<String>()
-    for (t in 1..T) {
-        val (R, S) = readln().split(" ")
-        var P = ""
-        for (s in S) {
-            repeat(R.toInt()) {
-                P += s
-            }
+    var result: String = ""
+    for (i in 1..T) {
+        val (r, str) = readln().split(" ")
+        for (j in str) {
+            result += "${j}".repeat(r.toInt())
         }
-        result.add(P)
+        result += "\n"
     }
-    println(result.joinToString("\n"))
+    print(result)
 }
