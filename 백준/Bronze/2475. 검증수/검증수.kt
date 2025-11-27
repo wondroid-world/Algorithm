@@ -1,4 +1,4 @@
 fun main() {
-    val numbers = readln().split(" ").map { it.toInt() * it.toInt() }
-    println(numbers.sum() % 10)
+    val nums = readln().split(" ").map { it.toInt() * it.toInt() }
+    println(nums.sum() % 10)
 }
