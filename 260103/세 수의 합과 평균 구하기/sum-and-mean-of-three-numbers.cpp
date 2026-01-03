@@ -7,10 +7,7 @@ int main() {
     cin >> a >> b >> c;
     int sum = a + b + c;
 
-    cout << fixed;
-    cout.precision(0);
-
     cout << sum << endl;
-    cout << (double)sum / 3;
+    cout << sum / 3;
     return 0;
 }
