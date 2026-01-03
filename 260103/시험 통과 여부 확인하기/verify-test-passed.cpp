@@ -9,7 +9,7 @@ int main() {
     if (a >= 80) {
         cout << "pass";
     } else {
-        cout << 80 - a << " more socre";
+        cout << 80 - a << " more score";
     }
     return 0;
 }
