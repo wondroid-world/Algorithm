@@ -11,7 +11,7 @@ int main() {
         cout << "odd" << endl;
     }
 
-        if (a % 2 == 0) {
+        if (b % 2 == 0) {
         cout << "even";
     } else {
         cout << "odd";
