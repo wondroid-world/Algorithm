@@ -6,8 +6,8 @@ int main() {
     int i = 1;
     cin >> N;
     while(i <= N) {
-        cout << i << " ";
         i *= 3;
+        cout << i << " ";
     }
     return 0;
 }
