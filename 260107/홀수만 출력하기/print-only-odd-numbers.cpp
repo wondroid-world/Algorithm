@@ -10,7 +10,7 @@ int main() {
 
     for (int i = 0; i < n; i++){
         cin >> num;
-        if (num % 3 == 0) {
+        if (num % 2 == 1 || num % 3 == 0) {
             cout << num << endl;
         }
     }
