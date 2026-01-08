@@ -11,11 +11,14 @@ int main() {
     while (a <= b) {
         if (a % 5 == 0 || a % 7 == 0) {
             sum += a;
+                    cnt++;
         }
         a++;
-        cnt++;
+
     }
 
+    cout << fixed;
+    cout.precision(1);
     cout << sum << ' ' << (double)sum / cnt;
     return 0;
 }
