@@ -7,16 +7,16 @@ int main() {
 
     bool satisfied = false;
     for (int i = a; i <= b; i++) {
-        if (c % i == 0) {
+        if (i % c == 0) {
             satisfied = true;
             break;
         }
     }
 
     if (satisfied) {
-        cout << "YES";
-    } else {
         cout << "NO";
+    } else {
+        cout << "YES";
 
     }
     return 0;
