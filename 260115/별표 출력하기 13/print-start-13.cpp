@@ -46,7 +46,7 @@ for  (int j = 1; j <= n; j++) {
                 cout << "* ";
             }
             cout << endl;
-            l++;
+            l--;
         } else {
             for (int i = 1; i <= k; i++) {
                 cout << "* ";
