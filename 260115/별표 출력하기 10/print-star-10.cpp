@@ -2,8 +2,8 @@
 using namespace std;
 
 int main() {
-    int n;
-    cin >> n;
+    int n = 4;
+    // cin >> n;
     int k = 1;
     int l = n;
     for (int i = 1; i <= n; i++) {
@@ -49,7 +49,7 @@ int main() {
         for (int j = 1; j <= k; j++) {
             cout << "* ";
         }
-        k--;
+        k++;
         cout << endl;
     }
 }   
