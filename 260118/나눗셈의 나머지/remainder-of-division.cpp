@@ -6,7 +6,7 @@ int main() {
     cin >> a>> b;
     int arr[10] = {0,};
     int sum = 0;
-    for (int i = 0; i < 5; i++) {
+    while (a > 1) {
         int j = a % b;
         int k = a / b;
         a = k;
