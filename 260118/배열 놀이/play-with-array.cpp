@@ -26,8 +26,8 @@ int main() {
             cout << endl;
         } else if (k == 3) {
             cin >> e;
-            for (int i = l - 1; i < e; i++) {
-                cout << arr[i] << ' ';
+            for (int j = l - 1; j < e; j++) {
+                cout << arr[j] << ' ';
             }
             cout << endl;
         }
