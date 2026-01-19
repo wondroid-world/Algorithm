@@ -7,22 +7,22 @@ int n, m;
 int main() {
     cin >> n >> m;
     int cnt = 0;
-    int arr[4][2] = {0};
+    int arr[n][m] = {0};
     // Please write your code here.
-    for (int i = 0; i < 2; i++) {
-        for (int j = 0; j < 4; j++) {
+    for (int i = 0; i < m; i++) {
+        for (int j = 0; j < n; j++) {
             if (i % 2 == 0) {
                 arr[j][i] = cnt;
             } else {
-                arr[3-j][i] = cnt;
+                arr[n-1-j][i] = cnt;
             }
 
             cnt++;
         }    
     }
 
-        for (int i = 0; i < 4; i++) {
-        for (int j = 0; j < 2; j++) {
+        for (int i = 0; i < n; i++) {
+        for (int j = 0; j < m; j++) {
             cout << arr[i][j] << ' ';
         }
         cout << endl;    
