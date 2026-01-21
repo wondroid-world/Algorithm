@@ -8,7 +8,7 @@ int main() {
 
     for (int i = 0; i < m; i++) {
         cin >> r >> c;
-        arr[r][c] = 1;
+        arr[r- 1][c - 1] = 1;
     }
 
     for (int i = 0; i < n; i++) {
