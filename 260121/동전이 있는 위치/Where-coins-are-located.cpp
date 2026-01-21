@@ -2,7 +2,7 @@
 using namespace std;
 
 int main() {
-    int n, r, c;
+    int n, m, r, c;
     cin >> n >> m;
     int arr[n][n] = {0};
 
